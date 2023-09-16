@@ -14,6 +14,7 @@
     --black2: #303030;
     --black3: rgba(0, 0, 0, 0.09);
     --black4: rgba(0, 0, 0, 0.10);
+    --black5: rgba(0, 0, 0, 0.19);
     --red1: #9E3040;
     --red2: rgba(158, 48, 64, 0.17);
     --red3: rgba(158, 48, 64, 0.30);
@@ -28,10 +29,10 @@
     --very-very-small: 14px;
     --very-small: 15px;
     --small: 16px;
-    --medium1: 17px;
+    --medium1: 16px;
     --medium2: 16px;
     --medium3: 18px;
-    --medium4: 30px;
+    --medium4: 21px;
     --large: 36px;
     --extra-large: 58px;
     --extra-extra-large: 32px;
@@ -172,7 +173,7 @@ a {
     color: var(--black1) !important;
 }
 
-.custom-container {
+.custom-container-header {
     max-width: 1304px !important;
 }
 
@@ -467,43 +468,52 @@ a {
     fill: white;
 }
 
+/* main */
+/* section1 */
 
+.section1 {
+    min-height: 384px;
+}
 
+.custom-container-section1 {
+    max-width: 957px !important;
+}
 
+.section1-box {
+    width: 100px;
+    height: 100px;
+    border-radius: 5px;
+    background: #FFF;
+    box-shadow: 0px 0px 19px 0px var(--black5);
+}
 
+.mb-22 {
+    margin-bottom: 22px;
+}
 
+.font-feature-settings {
+    font-feature-settings: 'clig' off, 'liga' off;
+}
 
+.max-width-192 {
+    max-width: 192px;
+}
 
+.max-width-252 {
+    max-width: 252px;
+}
 
+.max-width-219 {
+    max-width: 219px;
+}
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+.section1-line {
+    display: none;
+}
 
 
 /* media query */
+
 @media(min-width: 380px) {
 
     /* header */
@@ -521,10 +531,10 @@ a {
         --very-very-small: 14px;
         --very-small: 15px;
         --small: 16px;
-        --medium1: 17px;
+        --medium1: 16px;
         --medium2: 18px;
         --medium3: 18px;
-        --medium4: 30px;
+        --medium4: 21px;
         --large: 36px;
         --extra-large: 58px;
         --extra-extra-large: 32px;
@@ -643,5 +653,22 @@ a {
         background-size: cover;
         background-position: center;
         min-height: 750px;
+    }
+
+    /* main */
+    /* section1 */
+    .section1-line {
+        display: unset;
+        top: 32%;
+    }
+}
+
+@media(min-width: 1450px) {
+
+    /* main */
+    /* section1 */
+    .section1-line {
+        display: none;
+
     }
 }
